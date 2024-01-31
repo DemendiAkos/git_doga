@@ -10,5 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     arr.push(parseInt(number.value));
     console.log(arr);
+    
+    li.innerHTML = number.value;
+    let ul = document.getElementById('list') as HTMLElement;
+    ul.appendChild(li);
   })
 });
