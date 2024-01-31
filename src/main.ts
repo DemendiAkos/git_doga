@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     li.innerHTML = number.value;
     let ul = document.getElementById('list') as HTMLElement;
     ul.appendChild(li);
-    
+      
   })
 
   document.getElementById('minButton')?.addEventListener('click', () => {
@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
     p.textContent = Math.min(...arr);
   });
 
+  document.getElementById('maxButton')?.addEventListener('click', () => {
+    let p = document.getElementById('displayBiggest') as HTMLElement ;
+    p.textContent = Math.max(...arr);
+  });
 
 });
 
